@@ -1,0 +1,28 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tweetButtonNCount {
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee;
+}
+
+.tweet-box {
+  border-bottom-color: #545149;
+  border-width: 0 0 thick 0;
+  width: 90vw;
+  background-color: #f4f1ec;
+}
+
+button {
+  background-color: #4056A1;
+  color: white;
+  border: none;
+}
+
+textarea { 
+  resize: none; 
+}

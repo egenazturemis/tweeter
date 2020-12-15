@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  height: 400px;
+  width: 100vw;
+  background-color: #e3ba88;
+  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+img {
+  display: flex;
+  justify-content: center;
+
+}
