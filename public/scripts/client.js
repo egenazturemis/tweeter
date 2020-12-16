@@ -40,22 +40,17 @@ const createTweetElement = function(tweet) {
 
 
 const loadTweets = function () {
-  $('#tweetsContainer').on("load", function() {
-
-    $.ajax({
-      method: 'GET',
-      url: '/tweets',
-    })
-    .then((result) => {
-      renderTweets(result);
-    })
-    .catch((err) => {
-      console.log(err);
-    })
+  $.ajax({
+    method: 'GET',
+    url: '/tweets',
   })
-}
-
-loadTweets();
+  .then((result) => {
+    renderTweets(result);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+};
 
 const submitTweet = function () {
   $('.submit-tweet').submit(function(event) {
@@ -73,7 +68,7 @@ const submitTweet = function () {
       console.log(err);
     })
   });
-}
+};
 
 
 /////////////////////////////////////////////////////
