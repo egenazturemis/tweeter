@@ -1,13 +1,13 @@
-header {
+.profile {
   display: flex;
-  height: 400px;
+  height: 600px;
   width: 100vw;
   background-color: #e3ba88;
   background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding-top: 120px;
 }
 
 img {

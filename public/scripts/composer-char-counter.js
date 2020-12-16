@@ -22,3 +22,16 @@ $(document).ready(function() {
   
   })
 });
+
+// Tweet box hover state implementation
+$(document).ready(function() {
+  const tweet = $(".tweet");
+
+  tweet.hover(
+    function() {
+      $(this).addClass("hover");
+    }, function() {
+      $(this).removeClass("hover");
+    }
+  )
+});
