@@ -24,7 +24,7 @@ const createTweetElement = function(tweet) {
     </div>
     <p class="handle">${tweet.user.handle}</p>
   </header>
-  <p class="entry">${tweet.content.text}</p>
+  <p class="entry">${escape(tweet.content.text)}</p>
   <footer class="tweet-footer">
     <p class="timestamp">10 days ago</p>
     <div class="tweetIcons">
@@ -52,6 +52,13 @@ const loadTweets = function () {
   })
 };
 
+// prevent xss:
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 
 /////////////////////////////////////////////////////
 $(document).ready(function() {
@@ -62,6 +69,7 @@ $(document).ready(function() {
     
     let tweetBox = $('#tweet-text').val()
     
+    // prevent empty or too long tweets from being posted:
     if (tweetBox.length > 140) {
       alert("You've exceeded the max. character limit of 140 characters!");
   
@@ -75,27 +83,13 @@ $(document).ready(function() {
         data: $('.submit-tweet').serialize()
       })
       .then((result) => {
-        loadTweets(result);
+        loadTweets();
+        $('#tweet-text').val('');
       })
       .catch((err) => {
         console.log(err);
       })
       
-      $.ajax({
-        method: 'GET',
-        url: '/tweets',
-        data: tweetBox
-      })
-      .then(function(newTweet) {
-        tweetBox.prepend(newTweet);
-        $('#tweet-text').html('')
-      })
-      .catch((err) => {
-        console.log(err);
-      })
     }
   })
 });
-
-
-
