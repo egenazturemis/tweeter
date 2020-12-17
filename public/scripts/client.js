@@ -80,6 +80,22 @@ $(document).ready(function() {
       .catch((err) => {
         console.log(err);
       })
+      
+      $.ajax({
+        method: 'GET',
+        url: '/tweets',
+        data: tweetBox
+      })
+      .then(function(newTweet) {
+        tweetBox.prepend(newTweet);
+        $('#tweet-text').html('')
+      })
+      .catch((err) => {
+        console.log(err);
+      })
     }
   })
 });
+
+
+
