@@ -98,4 +98,10 @@ html {
    /* how to change color of icons? */
  }
 
- 
+.throwError {
+  display: none;
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}

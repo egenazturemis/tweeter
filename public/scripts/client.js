@@ -59,9 +59,9 @@ const escape =  function(str) {
   return div.innerHTML;
 }
 
-
 /////////////////////////////////////////////////////
 $(document).ready(function() {
+
   loadTweets();
 
   $('.submit-tweet').submit(function(event) {
@@ -71,10 +71,14 @@ $(document).ready(function() {
     
     // prevent empty or too long tweets from being posted:
     if (tweetBox.length > 140) {
-      alert("You've exceeded the max. character limit of 140 characters!");
+      const alert = "<p>You've exceeded the max. character limit of 140 characters!</p>";
+      $('.throwError').append(alert);
+      $('.throwError').slideDown();
   
     } else if (tweetBox === null || tweetBox === '') {
-      alert("Can't post an empty tweet! Type something to post.");
+      const alert = "<p>Can't post an empty tweet! Type something to post.</p>";
+      $('.throwError').append(alert);
+      $('.throwError').slideDown();
   
     } else {
       $.ajax({
@@ -83,6 +87,7 @@ $(document).ready(function() {
         data: $('.submit-tweet').serialize()
       })
       .then((result) => {
+        $('.throwError').slideUp();
         loadTweets();
         $('#tweet-text').val('');
       })
