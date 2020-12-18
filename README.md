@@ -4,9 +4,9 @@ Tweeter is a simple, single-page Twitter clone, compatable with desktop/laptop a
 
 ## Final Product
 
-!["Screenshot of the desktop/laptop version of main tweet page"]()
-!["Screenshot of Create New URL page"]()
-!["Screenshot of URLs page"]()
+!["Screenshot of the desktop/laptop version of main tweet page"](https://github.com/egenazturemis/tweeter/blob/master/docs/desktop-view-main.png)
+!["Screenshot of the tablet view of tweets section"](https://github.com/egenazturemis/tweeter/blob/master/docs/tablet-view-tweets-section.png)
+!["Screenshot of the desktop/laptop view of long tweet alert"](https://github.com/egenazturemis/tweeter/blob/master/docs/desktop-view-over-limit-alert.png)
 
 ## Dependencies
 
