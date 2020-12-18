@@ -4,9 +4,8 @@ nav {
   justify-content: space-between;
   width: 100vw;
   background-color: #4056A1;
-  height: 120px;
+  height: 4em;
   color: #FFFFFF;
-  /* border-radius: 8px; */
   position: fixed;
   top: 0em;
   width: 100vw
@@ -22,8 +21,31 @@ nav div {
 
 .logo {
   font-family: Bungee;
+  font-size: 26pt;
 }
 
 .write {
   font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16pt;
+  line-height: 1.5em;
+}
+
+.motto {
+  margin: 0;
+}
+
+
+
+/* Media Queries for Mobile */
+
+@media only screen and (max-width: 1023px) {
+  nav {
+    background-color: transparent;
+  }
 }

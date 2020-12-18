@@ -1,17 +1,36 @@
 .profile {
   display: flex;
   height: 600px;
-  width: 100vw;
   background-color: #e3ba88;
   background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 120px;
 }
 
 img {
   display: flex;
   justify-content: center;
-
 }
+
+h2{
+  color: #f4f1ec;
+  font-weight: 400;
+}
+h2 span {
+  font-weight: bold;
+}
+
+
+/* Media Queries for Laptops / Desktops */
+
+@media only screen and (min-width: 1024px) {
+  .profile {
+    margin: 4em 2em 2em 4em;
+    width: 100%;
+    max-width: 25em;
+    max-height:18em;
+    justify-content: flex-end;
+  }
+}
+

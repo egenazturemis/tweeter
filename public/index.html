@@ -4,6 +4,9 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+    <!-- Disable Viewport -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
@@ -38,42 +41,40 @@
     <nav>
       <div class="logo">tweeter</div>
       <div>
-        <div>
-          <span class="write">Write </span> a new tweet
-          <img src="/images/angle-double-down-solid.svg" width="20" height="20">
+        <div class="banner">
+          <p class="motto"><span class="write">Write</span> a new tweet</p>
+          <img width="15" height="15" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDk3MC41ODYgOTcwLjU4NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PHNjcmlwdD4KICAgICAgICAvLyBDYXRjaCBlcnJvcnMgaWYgc2lnbmFsIGlzIGFscmVhZHkgc2V0IGJ5IHVzZXIgYWdlbnQgb3Igb3RoZXIgZXh0ZW5zaW9uCiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgT2JqZWN0LmRlZmluZVByb3BlcnR5KG5hdmlnYXRvciwgJ2dsb2JhbFByaXZhY3lDb250cm9sJywgewogICAgICAgICAgICAgICAgdmFsdWU6IGZhbHNlLAogICAgICAgICAgICAgICAgZW51bWVyYWJsZTogdHJ1ZQogICAgICAgICAgICB9KQogICAgICAgICAgICAvLyBSZW1vdmUgc2NyaXB0IHRhZyBhZnRlciBleGVjdXRpb24KICAgICAgICAgICAgZG9jdW1lbnQuY3VycmVudFNjcmlwdC5wYXJlbnRFbGVtZW50LnJlbW92ZUNoaWxkKGRvY3VtZW50LmN1cnJlbnRTY3JpcHQpCiAgICAgICAgfSBjYXRjaCAoZSkge308L3NjcmlwdD4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIGQ9Ik00NC4xNzcsMjIwLjMwN2wzNjMuOSwyOTYuNGMyMi4xMDEsMTgsNDguOSwyNyw3NS44LDI3YzI2LjkwMSwwLDUzLjcwMS05LDc1LjgwMS0yN2wzNjYuNjk5LTI5OC43ICAgYzUxLjQtNDEuOSw1OS4xMDEtMTE3LjQsMTcuMi0xNjguOGMtNDEuOC01MS40LTExNy4zOTktNTkuMS0xNjguOC0xNy4zbC0yOTAuOTAxLDIzN2wtMjg4LjEtMjM0LjdjLTUxLjQtNDEuOC0xMjctMzQuMS0xNjguOCwxNy4zICAgQy0xNC45MjMsMTAyLjkwNy03LjEyMywxNzguNDA3LDQ0LjE3NywyMjAuMzA3eiIgZmlsbD0iI2U1MWIxYiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPHBhdGggZD0iTTQ0LjE3Nyw2NDIuMjA3bDM2My45LDI5Ni4zOTljMjIuMTAxLDE4LDQ4LjksMjcsNzUuOCwyN2MyNi45MDEsMCw1My43MDEtOSw3NS44MDEtMjdsMzY2LjY5OS0yOTguNyAgIGM1MS40LTQxLjg5OSw1OS4xMDEtMTE3LjM5OSwxNy4yLTE2OC44Yy00MS44OTktNTEuMzk5LTExNy4zOTktNTkuMS0xNjguOC0xNy4ybC0yOTAuOTAxLDIzNi45bC0yODguMS0yMzQuNiAgIGMtNTEuNC00MS45LTEyNy0zNC4xMDEtMTY4LjgsMTcuMTk5Qy0xNC45MjMsNTI0LjgwNy03LjEyMyw2MDAuNDA2LDQ0LjE3Nyw2NDIuMjA3eiIgZmlsbD0iI2U1MWIxYiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
         </div>
       </div>
     </nav>
 
-    <header class="profile">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-  </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <div class="throwError"></div>
-        <form class="submit-tweet" method="POST" action="/tweets/">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea class="tweet-box" name="text" id="tweet-text"></textarea>
-          <div class="tweetButtonNCount">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section id="tweets-container">
-      </section>
-      <h1>Lorem Ipsum</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </main>
+    <div class="bigContainer">
+      <header class="profile">
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2><span>Egenaz</span> Turemis</h2> 
+        </div>
+    </header>
+  
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <div class="throwError"></div>
+          <form class="submit-tweet" method="POST" action="/tweets/">
+            <textarea class="tweet-box" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class="tweetButtonNCount">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <section class= "tweets-container" id="tweets-container">
+        </section>
+      </main>
+    </div>
   </body>
 </html>
 
